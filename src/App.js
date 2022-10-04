@@ -17,11 +17,17 @@ function App() {
   const productsPerPage = 4;
 
   const getProducts = async (skip) => {
-    setIsLoading(true);
-    const { data } = await axios.get(`http://testtask.alto.codes/front-products.php?skip=${skip}`);
-    setProduts(data.products);
-    setTotalCount(data.totalCount);
-    setIsLoading(false);
+    try {
+      setIsLoading(true);
+      const { data } = await axios.get(
+        `http://testtask.alto.codes/front-products.php?skip=${skip}`,
+      );
+      setProduts(data.products);
+      setTotalCount(data.totalCount);
+      setIsLoading(false);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
