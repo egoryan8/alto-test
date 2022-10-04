@@ -1,0 +1,124 @@
+.product {
+  height: 450px;
+  position: relative;
+  box-shadow: 0px 3px 6px #dfeafc;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border: 1px solid #e4ecf9;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.product__image {
+  padding: 20px;
+  border-bottom: 1px solid #e4ecf9;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product__description {
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 140px;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.product__name {
+  margin: 18px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #4f545f;
+}
+
+.product__price {
+  margin: 12px 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f545f;
+}
+
+.availabile {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #76cb22;
+  padding: 6px 9px;
+}
+
+.not-availabile {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+  background: #a6c3ee;
+  padding: 6px 9px;
+}
+
+.product__color {
+  margin: 11px 0 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6c7683;
+}
+
+.product__short-desc {
+  margin: 9px 0 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6c7683;
+}
+
+.product__btn-to-cart {
+  cursor: pointer;
+  margin: 20px 0 0;
+  width: 142px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: #336ec6;
+  box-shadow: 0px 4px 8px #a9c2e9;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.product__color,
+.product__short-desc,
+.product__btn-to-cart {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.product__btn-to-cart:hover {
+  transform: scale(1.05);
+}
+
+.product:hover .product__color,
+.product__short-desc,
+.product__btn-to-cart {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product:hover .product__description {
+  height: 290px;
+}
+
+.product:hover {
+  height: 100%;
+  box-shadow: 0px 6px 12px #d5e0ef;
+}
