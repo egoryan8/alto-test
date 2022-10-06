@@ -1,16 +1,17 @@
-# Тестовое задание React.js разработчик
+# Тестовое задание Frontend разработчик
 
 ## Задание:
 
-Необходимо создать упрощенную копию приложения https://keep.google.com/ из экосистемы Google с помощью Reactjs и технологий браузеров. 
+1. C помощью JS получить данные GET запросом с адреса [testtask.alto.codes/front-products.php](testtask.alto.codes/front-products.php)
+2. Согласно макету отрисовать данные на странице на основе JSON из ответа
+3. Сделать рабочую пагинацию согласно макету (кнопка вперед подгружает следующую пачку страниц, так с первой страницы переход будет на пятую)
+
+Макет - [ссылка на макет](https://www.figma.com/file/iZIRjgwAwlESDBw608eslB/Alto-Frontend-developer-products-test?node-id=0%3A1)
 
 ## Применённые технологии:
 
 - React.js
-- TypeScript
-- uuid (для генерации уникального id)
-- ReactContext для хранения данных
-- Material UI
+- Axios
 
 ## Как собрать проект у себя на компьютере:
 
